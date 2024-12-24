@@ -29,25 +29,30 @@
 
     <!--CSS DINAMICO-->
     @yield('css')
-
 </head>
 
 <body>
     @include('navbar')
 
     @hasSection('sidebar')
-    @yield('sidebar')
-    @endif
+        @yield('sidebar')
 
+        <div class="ml-auto mensagem">
+            @include('componentes.mensagens')
+        </div>
 
-    <main @hasSection('sidebar') @else class="mt-2" @endif>
-        @yield('content')
-    </main>
-
-    @hasSection('sidebar')
+        <main>
+            @yield('content')
+        </main>
 
     @else
-    @include('componentes.footer')
+        @include('componentes.mensagens')
+
+        <main class="mt-2">
+            @yield('content')
+        </main>
+
+        @include('componentes.footer')
     @endif
 
     <!-- Scripts -->

@@ -1,6 +1,5 @@
 @extends('coordenador.detalhesEvento')
 @section('menu')
-    @include('componentes.mensagens')
     <div id="divCadastrarAssinatura" class="comissao">
         <div class="row">
             <div class="col-sm-12">

@@ -1,5 +1,4 @@
 @extends('coordenador.detalhesEvento') @section('menu')
-    @include('componentes.mensagens')
     <div id="divListarRegistros"
         style="display: block">
         <div class="row">

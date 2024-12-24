@@ -57,7 +57,7 @@
                     <input type="hidden" name="pergunta_id[]" value="{{$pergunta->id}}">
                         <div class="card">
                             <div class="card-body">
-                                <p><strong>{{$pergunta->pergunta}}</strong> <span><small style="float: right">Pergunta visível para o autor? <input type="checkbox" name="pergunta_checkBox[]" value="{{$pergunta->id}}" {{  ($pergunta->visibilidade == true ? ' checked' : '') }} disabled></small></span>
+                                <p><strong>{{strip_tags($pergunta->pergunta)}}</strong> <span><small style="float: right">Pergunta visível para o autor? <input type="checkbox" name="pergunta_checkBox[]" value="{{$pergunta->id}}" {{  ($pergunta->visibilidade == true ? ' checked' : '') }} disabled></small></span>
                                 </p>
 
                                 @if($pergunta->respostas()->exists() && $pergunta->respostas->first()->opcoes->count())
@@ -209,7 +209,7 @@
 
     <div class="d-flex flex-row justify-content-center p-5">
         <div class="px-2">
-            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal">
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal{{$trabalho->id}}">
                 Deletar Avaliação
             </button>
         </div>

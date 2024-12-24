@@ -3,7 +3,6 @@
 @section('menu')
     {{-- Comissão --}}
     <div id="divCadastrarComissao" class="comissao" style="display: block">
-        @include('componentes.mensagens')
         <div class="row">
             <div class="col-sm-12">
                 <h1 class="titulo-detalhes">Cadastrar comissão</h1>

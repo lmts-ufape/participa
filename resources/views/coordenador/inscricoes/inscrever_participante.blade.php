@@ -27,7 +27,6 @@
                     </div>
                     @if ($evento->categoriasParticipantes()->where('permite_inscricao', true)->exists())
                     <div id="formulario" x-data="{ categoria: 0 }">
-                        @include('componentes.mensagens')
                         <div class="row form-group">
                             <div class="col-sm-12">
                                 <label for="categoria">Escolha sua categoria como

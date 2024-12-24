@@ -2,7 +2,6 @@
 
 @section('menu')
     <div id="divCadastrarPalestra" class="comissao" style="display: block">
-        @include('componentes.mensagens')
         <div id="divCadastrarAssinatura" class="comissao">
             <div class="row">
                 <div class="col-sm-12">

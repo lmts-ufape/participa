@@ -2,7 +2,6 @@
 
 @section('content')
 
-    @include('componentes.mensagens')
     <div class="container  position-relative">
         <div class="row justify-content-center titulo-detalhes">
             <div class="col-sm-12">

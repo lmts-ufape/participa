@@ -2,7 +2,6 @@
 @section('menu')
     <div id="divListarComissoes"
         style="display: block">
-        @include('componentes.mensagens')
         <div class="row">
             <div class="col-sm-12">
                 <h1 class="titulo-detalhes">Listagem dos membros da comissão {{ $comissao->nome }}</h1>

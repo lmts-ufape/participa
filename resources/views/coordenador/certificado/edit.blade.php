@@ -1,7 +1,6 @@
 @extends('coordenador.detalhesEvento')
 
 @section('menu')
-@include('componentes.mensagens')
 
 <style>
     #texto {

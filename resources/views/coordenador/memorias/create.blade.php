@@ -5,7 +5,6 @@
     <div id="divCadastrarComissao"
         class="comissao"
         style="display: block">
-        @include('componentes.mensagens')
         <div class="row">
             <div class="col-sm-12">
                 <h1 class="titulo-detalhes">Adicionar registro</h1>

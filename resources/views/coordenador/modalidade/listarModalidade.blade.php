@@ -130,9 +130,6 @@
                     <div class="col-sm-12">
                         <div class="card">
                             <div class="card-body">
-                                <div>
-                                    @include('componentes.mensagens')
-                                </div>
                                 <form method="POST" action="{{route('modalidade.update')}}" enctype="multipart/form-data" x-data="handler({{$modalidade->datasExtras}})">
                                     @csrf
                                     <p class="card-text">

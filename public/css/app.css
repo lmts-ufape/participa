@@ -11241,3 +11241,12 @@ a.text-dark:focus {
   }
 }
 
+.mensagem {
+    width: 80vw;
+}
+
+@media (min-width: 1367px) {
+    .mensagem {
+        width: 86vw;
+    }
+}

@@ -10,7 +10,6 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-md-12">
-                @include('componentes.mensagens')
                 <div class="card">
                     <div class="card-body">
                         <div class="row justify-content-between">

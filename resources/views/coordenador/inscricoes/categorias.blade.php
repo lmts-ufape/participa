@@ -1,8 +1,5 @@
 @extends('coordenador.detalhesEvento')
 @section('menu')
-<div>
-    @include('componentes.mensagens')
-</div>
 <div id="divListarCategorias" style="display: block">
     <div class="row">
         <div class="col-md-12">
@@ -288,7 +285,7 @@
                                 <a href="#" class="deleteEdit" onclick="enviarLinkParaExclusao('{{$link->id}}')">
                                     <img src="{{asset('img/icons/lixo.png')}}" style="width:25px;margin-top:35px">
                                 </a>
-                           
+
 
                         </div>
                     </div>
@@ -460,13 +457,13 @@
     function enviarLinkParaExclusao(linkId){
         document.getElementById('linkIdExcluir').value = linkId;
         alert(document.getElementById('linkIdExcluir').value);
-       
+
     }
 
     document.getElementById('formEditarCategoria7').addEventListener('submit', function(event){
         alert(document.getElementById('linkIdExcluir').value);
     });
 
-   
+
 </script>
 @endsection
